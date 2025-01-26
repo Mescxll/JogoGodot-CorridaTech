@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxqd5demcqe42"]
+
+[ext_resource type="Script" path="res://cena_1.gd" id="1_xx82v"]
+[ext_resource type="Texture2D" uid="uid://cfkwemv8bm0dl" path="res://imagens/1 Fundo.png" id="2_smaui"]
+[ext_resource type="Texture2D" uid="uid://dv1a6qp3ctmsa" path="res://imagens/Botão Jogar.png" id="3_6ssdf"]
+[ext_resource type="Texture2D" uid="uid://dly6cbk5y81y2" path="res://imagens/Botão Sair.png" id="4_ww1di"]
+[ext_resource type="Texture2D" uid="uid://ffoef1gi4irx" path="res://imagens/Botão Ajuda.png" id="5_en3rx"]
+[ext_resource type="AudioStream" uid="uid://bj63538i62jg1" path="res://audios/neon-gaming-128925.mp3" id="6_ra5oo"]
+
+[node name="Nó 1" type="Node2D"]
+script = ExtResource("1_xx82v")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(576.5, 323.5)
+scale = Vector2(0.449609, 0.449306)
+texture = ExtResource("2_smaui")
+
+[node name="BotaoJogar" type="Sprite2D" parent="."]
+position = Vector2(392.5, 529.875)
+scale = Vector2(0.274775, 0.283333)
+texture = ExtResource("3_6ssdf")
+
+[node name="Jogar" type="Button" parent="BotaoJogar"]
+modulate = Color(1, 0, 1, 0)
+show_behind_parent = true
+offset_left = -213.0
+offset_top = -95.0
+offset_right = 202.0
+offset_bottom = 96.0
+
+[node name="BotaoSair" type="Sprite2D" parent="."]
+position = Vector2(742.75, 531.531)
+scale = Vector2(0.313063, 0.3065)
+texture = ExtResource("4_ww1di")
+
+[node name="Sair" type="Button" parent="BotaoSair"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -165.0
+offset_top = -87.0
+offset_right = 176.0
+offset_bottom = 80.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ra5oo")
+volume_db = -15.661
+autoplay = true
+
+[node name="BotaoAjuda" type="Sprite2D" parent="."]
+position = Vector2(1106, 50)
+texture = ExtResource("5_en3rx")
+
+[node name="Ajuda" type="Button" parent="BotaoAjuda"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+offset_left = -33.0
+offset_top = -38.0
+offset_right = 33.0
+offset_bottom = 35.0
+
+[connection signal="pressed" from="BotaoJogar/Jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="BotaoSair/Sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="BotaoAjuda/Ajuda" to="." method="_on_ajuda_pressed"]

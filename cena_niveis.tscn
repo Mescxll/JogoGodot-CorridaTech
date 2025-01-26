@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf545ithu04rt"]
+
+[ext_resource type="Texture2D" uid="uid://crbknqad71jjc" path="res://imagens/2 Fundo geral.jpeg" id="1_qw0hm"]
+[ext_resource type="AudioStream" uid="uid://bj63538i62jg1" path="res://audios/neon-gaming-128925.mp3" id="2_tvojr"]
+
+[node name="Nó 2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(580.25, 322)
+scale = Vector2(0.452148, 0.451389)
+texture = ExtResource("1_qw0hm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tvojr")
+volume_db = -15.661
+autoplay = true
