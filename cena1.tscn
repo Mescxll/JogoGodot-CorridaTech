@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bxqd5demcqe42"]
 
 [ext_resource type="Script" path="res://cena_1.gd" id="1_xx82v"]
-[ext_resource type="Texture2D" uid="uid://cfkwemv8bm0dl" path="res://imagens/1 Fundo.png" id="2_smaui"]
+[ext_resource type="Texture2D" uid="uid://xy1muryx1n6s" path="res://imagens/Fundo.png" id="2_htx77"]
 [ext_resource type="Texture2D" uid="uid://dv1a6qp3ctmsa" path="res://imagens/Botão Jogar.png" id="3_6ssdf"]
 [ext_resource type="Texture2D" uid="uid://dly6cbk5y81y2" path="res://imagens/Botão Sair.png" id="4_ww1di"]
 [ext_resource type="Texture2D" uid="uid://ffoef1gi4irx" path="res://imagens/Botão Ajuda.png" id="5_en3rx"]
@@ -11,9 +11,9 @@
 script = ExtResource("1_xx82v")
 
 [node name="Fundo" type="Sprite2D" parent="."]
-position = Vector2(576.5, 323.5)
-scale = Vector2(0.449609, 0.449306)
-texture = ExtResource("2_smaui")
+position = Vector2(576.448, 325.608)
+scale = Vector2(1.1511, 1.15237)
+texture = ExtResource("2_htx77")
 
 [node name="BotaoJogar" type="Sprite2D" parent="."]
 position = Vector2(392.5, 529.875)
@@ -51,7 +51,6 @@ texture = ExtResource("5_en3rx")
 
 [node name="Ajuda" type="Button" parent="BotaoAjuda"]
 modulate = Color(1, 1, 1, 0)
-anchors_preset = -1
 offset_left = -33.0
 offset_top = -38.0
 offset_right = 33.0

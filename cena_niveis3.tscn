@@ -1,0 +1,96 @@
+[gd_scene load_steps=11 format=3 uid="uid://oivi0y1v2dr5"]
+
+[ext_resource type="Script" path="res://cena_niveis_3.gd" id="1_vewbh"]
+[ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_kt0xm"]
+[ext_resource type="Texture2D" uid="uid://cnyv6um7gg65q" path="res://imagens/Escolha.png" id="3_tuhko"]
+[ext_resource type="Texture2D" uid="uid://cwphv3ekcfkjf" path="res://imagens/setaDireita.png" id="6_40kl2"]
+[ext_resource type="Texture2D" uid="uid://dj5m6hhl2iajl" path="res://imagens/cyber.png" id="6_sqpbd"]
+[ext_resource type="Texture2D" uid="uid://bswuftmo4ybw5" path="res://imagens/setaEsquerda.png" id="7_pqxwm"]
+[ext_resource type="Texture2D" uid="uid://b4tsvgcgos40x" path="res://imagens/1.png" id="8_p7r66"]
+[ext_resource type="Texture2D" uid="uid://d06l01a0t6nqf" path="res://imagens/mobile.png" id="9_3wj2c"]
+[ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_qldfg"]
+[ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_rbbo0"]
+
+[node name="Nó 2" type="Node2D"]
+script = ExtResource("1_vewbh")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(576, 325.625)
+scale = Vector2(0.566406, 0.56836)
+texture = ExtResource("2_kt0xm")
+
+[node name="setaDireita" type="Sprite2D" parent="."]
+position = Vector2(704, 512)
+texture = ExtResource("6_40kl2")
+
+[node name="setaD" type="Button" parent="setaDireita"]
+self_modulate = Color(0.469004, 0.208592, 0.818526, 0.45098)
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 21.0
+offset_bottom = 20.0
+
+[node name="setaEsquerda" type="Sprite2D" parent="."]
+position = Vector2(448, 512)
+texture = ExtResource("7_pqxwm")
+
+[node name="setaE" type="Button" parent="setaEsquerda"]
+self_modulate = Color(0.469004, 0.208592, 0.818526, 0.45098)
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 21.0
+offset_bottom = 20.0
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(511, 513)
+scale = Vector2(0.615385, 0.607143)
+texture = ExtResource("8_p7r66")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(570, 512)
+scale = Vector2(0.539473, 0.612245)
+texture = ExtResource("9_qldfg")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(634, 512)
+scale = Vector2(0.602564, 0.605769)
+texture = ExtResource("10_rbbo0")
+
+[node name="ColorRect" type="ColorRect" parent="3"]
+offset_left = -45.0
+offset_top = -71.0
+offset_right = 47.0
+offset_bottom = 74.0
+color = Color(0.0745098, 0.0117647, 0.164706, 0.784314)
+
+[node name="Escolha" type="Sprite2D" parent="."]
+position = Vector2(576, 128)
+scale = Vector2(1.19835, 1)
+texture = ExtResource("3_tuhko")
+
+[node name="mobile" type="Sprite2D" parent="."]
+position = Vector2(448, 336)
+scale = Vector2(1.39474, 1.33516)
+texture = ExtResource("9_3wj2c")
+
+[node name="mobile" type="Button" parent="mobile"]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
+offset_left = -51.0
+offset_top = -83.0
+offset_right = 50.0
+offset_bottom = 83.0
+
+[node name="cyber" type="Sprite2D" parent="."]
+position = Vector2(706, 336)
+scale = Vector2(1.39474, 1.33516)
+texture = ExtResource("6_sqpbd")
+
+[node name="cyber" type="Button" parent="cyber"]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
+offset_left = -51.0
+offset_top = -83.0
+offset_right = 50.0
+offset_bottom = 83.0
+
+[connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
+[connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]
