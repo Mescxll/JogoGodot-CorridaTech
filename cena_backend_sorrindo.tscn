@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=3 uid="uid://by03tqmxypvxy"]
+
+[ext_resource type="Texture2D" uid="uid://c3opl852tyqb" path="res://imagens/FundoSorrindo.jpg" id="2_l8628"]
+[ext_resource type="Texture2D" uid="uid://wlvymqdhvb0v" path="res://imagens/Persongem 2 gargalhando.png" id="3_kk7ql"]
+[ext_resource type="Script" path="res://label.gd" id="4_04aw7"]
+
+[sub_resource type="GDScript" id="GDScript_sb7lu"]
+script/source = "extends Node2D
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_i8k0v"]
+font_color = Color(0.564706, 0.835294, 0.466667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r5nwp"]
+bg_color = Color(0.0784314, 0.027451, 0.133333, 1)
+corner_radius_top_left = 65
+corner_radius_top_right = 65
+corner_radius_bottom_right = 65
+corner_radius_bottom_left = 65
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_sb7lu")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(576.125, 328)
+scale = Vector2(0.601172, 0.605556)
+texture = ExtResource("2_l8628")
+
+[node name="Boneco" type="Sprite2D" parent="Fundo"]
+position = Vector2(-30.2727, -180.833)
+scale = Vector2(1.13555, 1.10836)
+texture = ExtResource("3_kk7ql")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 15.0
+offset_top = 410.0
+offset_right = 1135.0
+offset_bottom = 631.0
+color = Color(0.12549, 0.0588235, 0.196078, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 43.0
+offset_top = 386.0
+offset_right = 170.0
+offset_bottom = 416.0
+color = Color(0.12549, 0.0588235, 0.196078, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 434.0
+offset_right = 1093.0
+offset_bottom = 559.0
+label_settings = SubResource("LabelSettings_i8k0v")
+script = ExtResource("4_04aw7")
+
+[node name="TypewriterTimer" type="Timer" parent="Label"]
+wait_time = 0.03
+
+[node name="Botao1" type="Button" parent="."]
+offset_left = 119.0
+offset_top = 571.0
+offset_right = 415.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0.564706, 0.835294, 0.466667, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_r5nwp")
+
+[node name="Botao2" type="Button" parent="."]
+offset_left = 751.0
+offset_top = 570.0
+offset_right = 1047.0
+offset_bottom = 615.0
+theme_override_colors/font_color = Color(0.564706, 0.835294, 0.466667, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_r5nwp")

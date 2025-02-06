@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dseesgf5kut8f"]
+[gd_scene load_steps=12 format=3 uid="uid://dseesgf5kut8f"]
 
 [ext_resource type="Script" path="res://cena_niveis_2.gd" id="1_hqcbq"]
 [ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_ifqj3"]
@@ -10,6 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://dwk55mue8cll" path="res://imagens/gamer.png" id="8_l6v5x"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_inbvr"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_f7u5s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qcx1"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Nó 2" type="Node2D"]
 script = ExtResource("1_hqcbq")
@@ -69,11 +76,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("7_fqu1v")
 
 [node name="dados" type="Button" parent="dados"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
 offset_left = -51.0
 offset_top = -83.0
-offset_right = 50.0
-offset_bottom = 83.0
+offset_right = 48.0
+offset_bottom = 85.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6qcx1")
 
 [node name="gamer" type="Sprite2D" parent="."]
 position = Vector2(706, 336)
@@ -81,11 +89,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("8_l6v5x")
 
 [node name="gamer" type="Button" parent="gamer"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
 offset_left = -51.0
-offset_top = -83.0
-offset_right = 50.0
-offset_bottom = 83.0
+offset_top = -87.0
+offset_right = 51.0
+offset_bottom = 82.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6qcx1")
 
 [node name="Escolha" type="Sprite2D" parent="."]
 position = Vector2(576, 128)

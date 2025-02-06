@@ -10,10 +10,15 @@ config_version=5
 
 [application]
 
-config/name="JogoV2"
+config/name="JogoV3"
 run/main_scene="res://cena1.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://global.gd"
+EscolhasBackend="*res://escolhas_backend.gd"
 
 [rendering]
 

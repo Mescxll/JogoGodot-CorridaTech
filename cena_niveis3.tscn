@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://oivi0y1v2dr5"]
+[gd_scene load_steps=12 format=3 uid="uid://oivi0y1v2dr5"]
 
 [ext_resource type="Script" path="res://cena_niveis_3.gd" id="1_vewbh"]
 [ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_kt0xm"]
@@ -10,6 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://d06l01a0t6nqf" path="res://imagens/mobile.png" id="9_3wj2c"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_qldfg"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_rbbo0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5eow"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Nó 2" type="Node2D"]
 script = ExtResource("1_vewbh")
@@ -74,11 +81,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("9_3wj2c")
 
 [node name="mobile" type="Button" parent="mobile"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
-offset_left = -51.0
-offset_top = -83.0
-offset_right = 50.0
-offset_bottom = 83.0
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+offset_left = -50.0
+offset_top = -90.0
+offset_right = 51.0
+offset_bottom = 79.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_e5eow")
 
 [node name="cyber" type="Sprite2D" parent="."]
 position = Vector2(706, 336)
@@ -86,11 +94,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("6_sqpbd")
 
 [node name="cyber" type="Button" parent="cyber"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
 offset_left = -51.0
 offset_top = -83.0
-offset_right = 50.0
-offset_bottom = 83.0
+offset_right = 49.0
+offset_bottom = 85.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_e5eow")
 
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]

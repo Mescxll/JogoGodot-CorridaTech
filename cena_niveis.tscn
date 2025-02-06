@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cf545ithu04rt"]
+[gd_scene load_steps=12 format=3 uid="uid://cf545ithu04rt"]
 
 [ext_resource type="Script" path="res://cena_niveis.gd" id="1_3iwd3"]
 [ext_resource type="Texture2D" uid="uid://cnyv6um7gg65q" path="res://imagens/Escolha.png" id="2_1040s"]
@@ -10,6 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://b4tsvgcgos40x" path="res://imagens/1.png" id="8_2gxb4"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_6ppcl"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_jfx3h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pa6dp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Nó 2" type="Node2D"]
 script = ExtResource("1_3iwd3")
@@ -30,11 +37,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("2_sgakx")
 
 [node name="back" type="Button" parent="backend"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
-offset_left = -51.0
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+offset_left = -52.0
 offset_top = -83.0
 offset_right = 50.0
-offset_bottom = 83.0
+offset_bottom = 85.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_pa6dp")
 
 [node name="frontend" type="Sprite2D" parent="."]
 position = Vector2(706, 336)
@@ -42,11 +50,12 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("3_31i0k")
 
 [node name="front" type="Button" parent="frontend"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.45098)
-offset_left = -51.0
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+offset_left = -52.0
 offset_top = -83.0
-offset_right = 50.0
-offset_bottom = 83.0
+offset_right = 52.0
+offset_bottom = 85.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_pa6dp")
 
 [node name="setaEsquerda" type="Sprite2D" parent="."]
 position = Vector2(448, 512)
@@ -92,5 +101,6 @@ position = Vector2(634, 512)
 scale = Vector2(0.602564, 0.605769)
 texture = ExtResource("10_jfx3h")
 
+[connection signal="pressed" from="backend/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]

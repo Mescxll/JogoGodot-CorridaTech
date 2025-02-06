@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhgd1owvudg0w"]
+
+[ext_resource type="Script" path="res://cena_backend.gd" id="1_gqgi0"]
+[ext_resource type="Texture2D" uid="uid://b43b3fyxjbvu4" path="res://imagens/Fundo Escolhas Vazio.jpg" id="2_accsy"]
+[ext_resource type="Texture2D" uid="uid://myur8isoslvj" path="res://imagens/Seta.jpg" id="4_1cbd7"]
+[ext_resource type="Script" path="res://label.gd" id="4_t11r1"]
+[ext_resource type="Texture2D" uid="uid://c7p513ewk52hb" path="res://imagens/Personaagem 2 rindo.png" id="5_f4k8p"]
+[ext_resource type="Texture2D" uid="uid://cbr38fsegi0nv" path="res://imagens/Personagem 2 gargalhando.png" id="6_2h26i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8lv0b"]
+line_spacing = 1.0
+font_size = 25
+font_color = Color(0.564706, 0.835294, 0.466667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c5gs"]
+bg_color = Color(0.454902, 0.196078, 0.898039, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmivj"]
+bg_color = Color(0.0784314, 0.027451, 0.133333, 1)
+corner_radius_top_left = 65
+corner_radius_top_right = 65
+corner_radius_bottom_right = 65
+corner_radius_bottom_left = 65
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_gqgi0")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(577.125, 327.5)
+scale = Vector2(0.60013, 0.60463)
+texture = ExtResource("2_accsy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 16.0
+offset_top = 414.0
+offset_right = 1136.0
+offset_bottom = 637.0
+color = Color(0.12549, 0.0588235, 0.196078, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 47.0
+offset_top = 384.0
+offset_right = 172.0
+offset_bottom = 418.0
+color = Color(0.12549, 0.0588235, 0.196078, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 434.0
+offset_right = 1093.0
+offset_bottom = 559.0
+label_settings = SubResource("LabelSettings_8lv0b")
+script = ExtResource("4_t11r1")
+
+[node name="TypewriterTimer" type="Timer" parent="Label"]
+wait_time = 0.03
+
+[node name="Seta" type="Sprite2D" parent="."]
+position = Vector2(1103, 610)
+scale = Vector2(0.110765, 0.0908687)
+texture = ExtResource("4_1cbd7")
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 1063.0
+offset_top = 552.0
+offset_right = 1131.0
+offset_bottom = 630.0
+color = Color(0.12549, 0.0588235, 0.196078, 1)
+
+[node name="seta" type="Button" parent="."]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.592157)
+offset_left = 1086.0
+offset_top = 595.0
+offset_right = 1127.0
+offset_bottom = 625.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c5gs")
+
+[node name="Botao1" type="Button" parent="."]
+offset_left = 119.0
+offset_top = 571.0
+offset_right = 415.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0.564706, 0.835294, 0.466667, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_mmivj")
+
+[node name="Botao2" type="Button" parent="."]
+offset_left = 732.0
+offset_top = 571.0
+offset_right = 1028.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0.564706, 0.835294, 0.466667, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_mmivj")
+
+[node name="Boneco" type="Sprite2D" parent="."]
+position = Vector2(587, 231)
+scale = Vector2(0.687987, 0.671184)
+texture = ExtResource("5_f4k8p")
+
+[node name="Boneco sorrindo" type="Sprite2D" parent="."]
+position = Vector2(583, 240.838)
+scale = Vector2(0.671309, 0.673741)
+texture = ExtResource("6_2h26i")
+
+[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]
