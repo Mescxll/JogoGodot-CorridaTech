@@ -2,11 +2,11 @@ extends Node2D
 var current_scene = "inicio"  
 
 func load_scene(scene_name):
-	if scene_name in Global.choices: 
+	if scene_name in GlobalDados.choices: 
 		current_scene = scene_name
-		var scene_data = Global.choices[scene_name]
+		var scene_data = GlobalDados.choices[scene_name]
 		
-		var texto_atual = Global.choices[current_scene]["texto"] 
+		var texto_atual = GlobalDados.choices[current_scene]["texto"] 
 		$Label.start_typing(texto_atual)
 		
 		var options = scene_data["opcoes"].keys()
@@ -43,8 +43,8 @@ func load_scene(scene_name):
 		
 
 func _on_choice_selected(choice):
-	var next_scene = Global.choices[current_scene]["opcoes"][choice]
-	load_scene(next_scene)  
+	var next_scene = GlobalDados.choices[current_scene]["opcoes"][choice]
+	load_scene(next_scene) 
 
 func _ready():
-	load_scene(current_scene)
+	load_scene(current_scene)  

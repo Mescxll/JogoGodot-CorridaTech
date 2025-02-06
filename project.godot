@@ -18,7 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global.gd"
-EscolhasBackend="*res://escolhas_backend.gd"
+GlobalFront="*res://global_front.gd"
+GlobalMobile="*res://global_mobile.gd"
+GlobalDados="*res://global_dados.gd"
 
 [rendering]
 
