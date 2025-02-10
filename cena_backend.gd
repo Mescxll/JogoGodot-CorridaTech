@@ -39,7 +39,6 @@ func load_scene(scene_name):
 			$Botao1.text = options[0]
 			$seta.disconnect("pressed", Callable(self, "_on_choice_selected"))
 			$seta.connect("pressed", Callable(self, "_on_choice_selected").bind(options[0]))
-			
 		
 
 func _on_choice_selected(choice):

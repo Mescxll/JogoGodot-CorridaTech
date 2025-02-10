@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dseesgf5kut8f"]
+[gd_scene load_steps=13 format=3 uid="uid://dseesgf5kut8f"]
 
 [ext_resource type="Script" path="res://cena_niveis_2.gd" id="1_hqcbq"]
 [ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_ifqj3"]
@@ -10,9 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dwk55mue8cll" path="res://imagens/gamer.png" id="8_l6v5x"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_inbvr"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_f7u5s"]
+[ext_resource type="Texture2D" uid="uid://dqsm63b2bqutk" path="res://imagens/cadeado.png" id="11_3wti1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qcx1"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
+bg_color = Color(0.6, 0.6, 0.6, 0.0117647)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -89,17 +90,30 @@ scale = Vector2(1.39474, 1.33516)
 texture = ExtResource("8_l6v5x")
 
 [node name="gamer" type="Button" parent="gamer"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+modulate = Color(0.109804, 0.109804, 0.109804, 0.905882)
+self_modulate = Color(0, 0, 0, 1)
 offset_left = -51.0
 offset_top = -87.0
 offset_right = 51.0
 offset_bottom = 82.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_6qcx1")
 
+[node name="ColorRect" type="ColorRect" parent="gamer"]
+offset_left = -51.0
+offset_top = -87.0
+offset_right = 52.0
+offset_bottom = 82.0
+color = Color(0.109804, 0.109804, 0.109804, 0.737255)
+
 [node name="Escolha" type="Sprite2D" parent="."]
 position = Vector2(576, 128)
 scale = Vector2(1.19835, 1)
 texture = ExtResource("3_e14um")
+
+[node name="Cadeado" type="Sprite2D" parent="."]
+position = Vector2(704, 340)
+scale = Vector2(0.172375, 0.1765)
+texture = ExtResource("11_3wti1")
 
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
