@@ -101,6 +101,19 @@ position = Vector2(634, 512)
 scale = Vector2(0.602564, 0.605769)
 texture = ExtResource("10_jfx3h")
 
+[node name="setaEsquerda2" type="Sprite2D" parent="."]
+position = Vector2(45, 35)
+texture = ExtResource("6_wk5hd")
+
+[node name="setaE" type="Button" parent="setaEsquerda2"]
+modulate = Color(1, 1, 1, 0.313726)
+self_modulate = Color(0.470588, 0.207843, 0.819608, 0)
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 21.0
+offset_bottom = 20.0
+
 [connection signal="pressed" from="backend/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
+[connection signal="pressed" from="setaEsquerda2/setaE" to="." method="_on_seta_e_2pressed"]

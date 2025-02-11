@@ -2,6 +2,7 @@ extends Node2D
 var current_scene = "inicio"  
 
 func load_scene(scene_name):
+	Musica.stop_music()
 	if scene_name in Global.choices: 
 		current_scene = scene_name
 		var scene_data = Global.choices[scene_name]
@@ -40,6 +41,9 @@ func load_scene(scene_name):
 			$seta.disconnect("pressed", Callable(self, "_on_choice_selected"))
 			$seta.connect("pressed", Callable(self, "_on_choice_selected").bind(options[0]))
 		
+		if current_scene == "vitoria":
+			$seta.disconnect("pressed", Callable(self, "_on_choice_selected"))
+			$seta.connect("pressed", Callable(self, "_go_to_victory_scene"))
 
 func _on_choice_selected(choice):
 	var next_scene = Global.choices[current_scene]["opcoes"][choice]
@@ -47,3 +51,7 @@ func _on_choice_selected(choice):
 
 func _ready():
 	load_scene(current_scene)
+
+func _go_to_victory_scene():
+	Musica.rein_music2()
+	get_tree().change_scene_to_file("res://cena_vitoria.tscn")

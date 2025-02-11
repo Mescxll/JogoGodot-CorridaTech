@@ -21,6 +21,7 @@ Global="*res://global.gd"
 GlobalFront="*res://global_front.gd"
 GlobalMobile="*res://global_mobile.gd"
 GlobalDados="*res://global_dados.gd"
+Musica="*res://musica.gd"
 
 [rendering]
 

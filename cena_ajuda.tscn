@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://ty4xwkfna387"]
+
+[ext_resource type="Script" path="res://cena_ajuda.gd" id="1_5iwba"]
+[ext_resource type="Texture2D" uid="uid://bqty5tunumrc1" path="res://imagens/Fundo Ajuda.jpg" id="1_mcuhn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nek4p"]
+bg_color = Color(0.454902, 0.196078, 0.898039, 0)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5iwba")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(575, 326.5)
+scale = Vector2(0.602083, 0.610185)
+texture = ExtResource("1_mcuhn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 95.0
+offset_top = 68.0
+offset_right = 1057.0
+offset_bottom = 673.0
+theme_override_colors/font_color = Color(0.564706, 0.835294, 0.466667, 1)
+theme_override_font_sizes/font_size = 23
+text = "O Corrida Tech é uma simulação onde sua jornada profissional no mundo da Tecnologia da Informação está em jogo, e cada decisão tomada define o caminho até a carreira dos seus sonhos.
+
+A mecânica do jogo utiliza grafos e o algoritmo de Dijkstra. Apenas um trajeto leva à vitória (5 estrelas), então é necessário encontrar a rota mais eficiente. Empresas e oportunidades exigem requisitos específicos, tornando cada partida única.
+
+Produzido para a matéria de Matemática Discreta II do Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA) - Campus Vitória da Conquista.
+
+Feito por:
+Helen Rocha 
+Maria Eduarda Campos
+Dimitri Pereira"
+horizontal_alignment = 1
+autowrap_mode = 3
+justification_flags = 162
+
+[node name="seta" type="Button" parent="."]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.592157)
+offset_left = 52.0
+offset_top = 548.0
+offset_right = 104.0
+offset_bottom = 595.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_nek4p")
+
+[connection signal="ready" from="Fundo" to="." method="_on_fundo_ready"]
+[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]

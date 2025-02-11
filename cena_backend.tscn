@@ -12,15 +12,15 @@ line_spacing = 1.0
 font_size = 25
 font_color = Color(0.564706, 0.835294, 0.466667, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c5gs"]
-bg_color = Color(0.454902, 0.196078, 0.898039, 0)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mmivj"]
 bg_color = Color(0.0784314, 0.027451, 0.133333, 1)
 corner_radius_top_left = 65
 corner_radius_top_right = 65
 corner_radius_bottom_right = 65
 corner_radius_bottom_left = 65
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c5gs"]
+bg_color = Color(0.454902, 0.196078, 0.898039, 0)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gqgi0")
@@ -67,14 +67,6 @@ offset_right = 1130.0
 offset_bottom = 627.0
 color = Color(0.12549, 0.0588235, 0.196078, 1)
 
-[node name="seta" type="Button" parent="."]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.592157)
-offset_left = 1086.0
-offset_top = 595.0
-offset_right = 1127.0
-offset_bottom = 625.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_4c5gs")
-
 [node name="Botao1" type="Button" parent="."]
 offset_left = 119.0
 offset_top = 571.0
@@ -101,4 +93,10 @@ position = Vector2(582, 209)
 scale = Vector2(0.671309, 0.673741)
 texture = ExtResource("6_2h26i")
 
-[connection signal="pressed" from="seta" to="." method="_on_seta_pressed"]
+[node name="seta" type="Button" parent="."]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.592157)
+offset_left = 1086.0
+offset_top = 595.0
+offset_right = 1127.0
+offset_bottom = 625.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_4c5gs")

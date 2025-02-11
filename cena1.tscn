@@ -27,11 +27,16 @@ scale = Vector2(0.274775, 0.283333)
 texture = ExtResource("3_6ssdf")
 
 [node name="Jogar" type="Button" parent="BotaoJogar"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
-offset_left = -213.0
-offset_top = -95.0
-offset_right = 197.0
-offset_bottom = 96.0
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0)
+anchors_preset = -1
+anchor_left = 0.18
+anchor_top = 0.239
+anchor_right = 0.796
+anchor_bottom = 0.756
+offset_left = -332.88
+offset_top = -187.625
+offset_right = -333.136
+offset_bottom = -187.5
 theme_override_styles/normal = SubResource("StyleBoxFlat_04b7t")
 
 [node name="BotaoSair" type="Sprite2D" parent="."]
@@ -46,10 +51,6 @@ offset_top = -87.0
 offset_right = 176.0
 offset_bottom = 80.0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-volume_db = -15.661
-autoplay = true
-
 [node name="BotaoAjuda" type="Sprite2D" parent="."]
 position = Vector2(1106, 50)
 texture = ExtResource("5_en3rx")
@@ -61,6 +62,11 @@ offset_top = -38.0
 offset_right = 33.0
 offset_bottom = 35.0
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="pressed" from="BotaoJogar/Jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="BotaoSair/Sair" to="." method="_on_sair_pressed"]
 [connection signal="pressed" from="BotaoAjuda/Ajuda" to="." method="_on_ajuda_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
