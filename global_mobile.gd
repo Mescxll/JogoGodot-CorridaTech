@@ -119,7 +119,7 @@ var choices = {
 		
 		"paragrafo10": {
 			"texto": 
-			"Agora você irá aprender fundamentos de programação são a base sólida onde você 
+			"Agora você irá aprender fundamentos de programação que são a base sólida onde você 
 			constrói suas ideias; é como aprender a linguagem do mundo digital, para que, com
 			cada linha de código, você tenha o poder de transformar problemas complexos em 
 			soluções simples e elegantes.
