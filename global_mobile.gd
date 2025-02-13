@@ -108,7 +108,7 @@ var choices = {
 		
 		"cena_faculdade": {
 			"texto": 
-			"Você escolheu a faculdade de Ti, onde você descobre que o verdadeiro 
+			"Você escolheu a faculdade de TI, onde você descobre que o verdadeiro 
 			 vilão não é o código, mas sim o professor que diz 'O trabalho é em grupo'.
 			",
 		"opcoes": {		
@@ -121,8 +121,8 @@ var choices = {
 			"texto": 
 			"Agora você irá aprender fundamentos de programação são a base sólida onde você 
 			constrói suas ideias; é como aprender a linguagem do mundo digital, para que, com
-			cada linha de código, você tenha o poder de transformar problemas complexos em soluções
-			simples e elegantes.
+			cada linha de código, você tenha o poder de transformar problemas complexos em 
+			soluções simples e elegantes.
 			",
 			"opcoes": {
 				"": "paragrafo11",
@@ -745,8 +745,8 @@ var choices = {
 		"cena_testeDepuracao": {
 			"texto": 
 			"Testar e depurar código é como ser um detetive digital: enquanto os testes são suas 
-			câmeras de segurança que previnem o crime, o debug é sua lupa de investigação que descobre
-			onde o vilão (bug) se escondeu!
+			câmeras de segurança que previnem o crime, o debug é sua lupa de investigação que 
+			descobre onde o vilão (bug) se escondeu!
 			",
 		"opcoes":{		
 			"": "paragrafo57",
@@ -801,7 +801,8 @@ var choices = {
 		
 		"paragrafo61": {
 			"texto": 
-			"Agora você pode optar entre participar de conferências ou se aperfeiçoar e adquirir certificações.
+			"Agora você pode optar entre participar de conferências ou se aperfeiçoar e adquirir
+			 certificações.
 			",
 		"opcoes": {
 			"": "paragrafo62",
@@ -856,8 +857,8 @@ var choices = {
 		
 		"paragrafo65": {
 			"texto": 
-			"Além disso, ao se aperfeiçoar, você ganha confiança, melhora suas habilidades e aumenta
-			suas chances de crescer na sua área.
+			"Além disso, ao se aperfeiçoar, você ganha confiança, melhora suas habilidades e 
+			aumenta suas chances de crescer na sua área.
 			",
 		"opcoes": {
 			"": "paragrafo66",
@@ -901,7 +902,8 @@ var choices = {
 		"cena_cena_git": {
 			"texto": 
 			"Você escolheu aprender Git, o salva-vidas do desenvolvedor: quando tudo dá errado, ele 
-			te ajuda a voltar no tempo e fingir que nada aconteceu! Vou mostrar alguns comandos irados!
+			te ajuda a voltar no tempo e fingir que nada aconteceu! Vou mostrar alguns comandos
+			irados!
 			",
 		"opcoes":{		
 			"": "paragrafo69",
@@ -946,8 +948,8 @@ var choices = {
 		
 		"cena_cleanCode": {
 			"texto": 
-			"Clean Code é a arte de escrever código como se fosse uma boa história: claro, intuitivo
-			 e fácil de entender, para que até seu 'eu do futuro' agradeça! 
+			"Clean Code é a arte de escrever código como se fosse uma boa história: claro,
+			 intuitivo e fácil de entender, para que até seu 'eu do futuro' agradeça! 
 			",
 		"opcoes":{		
 			"": "paragrafo72",
@@ -967,7 +969,8 @@ var choices = {
 		
 		"paragrafo73": {
 			"texto": 
-			"Os dois próximos caminhos a seguir, são trabalhar como freelancer ou conseguir seu primeiro
+			"Os dois próximos caminhos a seguir, são trabalhar como freelancer ou conseguir 
+			 seu primeiro
 			 emprego como Desenvolvedor(a) Mobile.
 			",
 		"opcoes": {
@@ -1077,8 +1080,8 @@ var choices = {
 		
 		"paragrafo82": {
 			"texto": 
-			"Existem outras escolhas melhores para chegar a esse objetivo. Espero que jogue novamente 
-			e se divirta um pouco mais comigo. 
+			"Existem outras escolhas melhores para chegar a esse objetivo. Espero que jogue 
+			 novamente e se divirta um pouco mais comigo. 
 			",
 		"opcoes": {
 			"": "paragrafo83",
@@ -1119,8 +1122,8 @@ var choices = {
 		
 		"paragrafo85": {
 			"texto": 
-			"O esforço, a dedicação e as decisões que você tomou agora vão te levar a criar aplicativos
-			 incríveis, impactar o mundo da tecnologia e alcançar novas alturas. 
+			"O esforço, a dedicação e as decisões que você tomou agora vão te levar a criar 
+			 aplicativos incríveis, impactar o mundo da tecnologia e alcançar novas alturas. 
 			",
 		"opcoes": {
 			"": "paragrafo86",	
@@ -1130,8 +1133,8 @@ var choices = {
 		
 		"paragrafo86": {
 			"texto": 
-			"O futuro está nas suas mãos, e você está pronto para deixar sua marca com muita criatividade 
-			 e talento! 
+			"O futuro está nas suas mãos, e você está pronto para deixar sua marca com muita 
+			 criatividade e talento! 
 			",
 		"opcoes": {
 			"": "paragrafo87",	
@@ -1210,7 +1213,8 @@ var choices = {
 		"cena_banco_de_dados": {
 			"texto": 
 			"Compreender bancos de dados é essencial para o desenvolvimento de aplicativos
-			 robustos, pois permite armazenar, organizar e acessar informações de forma eficiente e estruturada.
+			 robustos, pois permite armazenar, organizar e acessar informações de forma eficiente 
+			 e estruturada.
 			",
 		"opcoes": {
 			"": "paragrafo92",
@@ -1220,9 +1224,10 @@ var choices = {
 		
 		"paragrafo92": {
 			"texto": 
-			"Saber escolher o tipo de banco adequado, seja relacional ou NoSQL, e aplicar boas práticas de modelagem, 
-			 consulta e otimização garante que seus aplicativos sejam escaláveis, rápidos e seguros, além de facilitar 
-			 a manutenção e evolução do sistema ao longo do tempo.
+			"Saber escolher o tipo de banco adequado, seja relacional ou NoSQL, e aplicar boas 
+			 práticas de modelagem, consulta e otimização garante que seus aplicativos sejam 
+			 escaláveis, rápidos e seguros, além de facilitar a manutenção e evolução do sistema
+			 ao longo do tempo.
 			",
 		"opcoes": {
 			"": "paragrafo93",
@@ -1232,9 +1237,10 @@ var choices = {
 		
 		"paragrafo93": {
 			"texto": 
-			"Agora você aprenderá sobre consumo de dados, que é a arte de não deixar seu usuário com a conta do restaurante
-			 muito alta no fim do mês - porque ninguém gosta de um app guloso que devora todos os megabytes do pacote de dados 
-			 como se fossem biscoitos de chocolate!
+			"Agora você aprenderá sobre consumo de dados, que é a arte de não deixar seu usuário 
+			 com a conta do restaurante muito alta no fim do mês - porque ninguém gosta de um app 
+			 guloso que devora todos os megabytes do pacote de dados como se fossem biscoitos de 
+			 chocolate!
 			",
 		"opcoes": {
 			"": "cena_apis",
@@ -1244,8 +1250,9 @@ var choices = {
 		
 		"cena_UIxUX": {
 			"texto": 
-			"Estudar UI/UX é fundamental para criar experiências de usuário incríveis, garantindo que seus aplicativos não 
-			 apenas funcionem bem, mas sejam intuitivos e agradáveis de usar.
+			"Estudar UI/UX é fundamental para criar experiências de usuário incríveis, garantindo
+			 que seus aplicativos não apenas funcionem bem, mas sejam intuitivos e agradáveis de 
+			 usar.
 			",
 		"opcoes": {
 			"": "paragrafo94",
@@ -1255,8 +1262,9 @@ var choices = {
 		
 		"paragrafo94": {
 			"texto": 
-			"A parte de UI (Interface do Usuário) te ensina a criar designs bonitos e funcionais, enquanto UX (Experiência do Usuário)
-			 foca em como as pessoas interagem com o produto, buscando sempre facilitar a navegação e a satisfação do usuário.
+			"A parte de UI (Interface do Usuário) te ensina a criar designs bonitos e funcionais, 
+			 enquanto UX (Experiência do Usuário) foca em como as pessoas interagem com o produto, 
+			 buscando sempre facilitar a navegação e a satisfação do usuário.
 			",
 		"opcoes": {
 			"": "paragrafo95",
@@ -1266,7 +1274,8 @@ var choices = {
 		
 		"paragrafo95": {
 			"texto": 
-			"Aqui você também irá publicar aplicativos na Play Store e App Store e preparar o seu app para distribuição.
+			"Aqui você também irá publicar aplicativos na Play Store e App Store e preparar o seu 
+			 app para distribuição.
 			",
 		"opcoes": {
 			"": "paragrafo96",
@@ -1276,7 +1285,8 @@ var choices = {
 		
 		"paragrafo96": {
 			"texto": 
-			"Chegou a hora da decisão! Você terá mais duas escolhas para continuar  seguindo adiante!
+			"Chegou a hora da decisão! Você terá mais duas escolhas para continuar 
+			 seguindo adiante!
 			",
 		"opcoes": {
 			"": "paragrafo97",
@@ -1286,9 +1296,10 @@ var choices = {
 		
 		"paragrafo97": {
 			"texto": 
-			"Você pode escolher entre Crashlytics que você usa para detectar erros rapidamente e melhorar
-			 a experiência do usuário de forma eficiente ou bancos de dados garantem o armazenamento seguro 
-			 e eficiente das informações, permitindo que o app funcione de forma dinâmica e organizada. 
+			"Você pode escolher entre Crashlytics que você usa para detectar erros rapidamente e
+			 melhorar a experiência do usuário de forma eficiente ou bancos de dados garantem o 
+			 armazenamento seguro e eficiente das informações, permitindo que o app funcione de 
+			 forma dinâmica e organizada. 
 			",
 		"opcoes": {
 			"": "paragrafo98",
@@ -1298,9 +1309,10 @@ var choices = {
 		
 		"paragrafo98": {
 			"texto": 
-			"Você pode escolher entre Crashlytics que você usa para detectar erros rapidamente e melhorar
-			 a experiência do usuário de forma eficiente ou bancos de dados garantem o armazenamento seguro 
-			 e eficiente das informações, permitindo que o app funcione de forma dinâmica e organizada. 
+			"Você pode escolher entre Crashlytics que você usa para detectar erros rapidamente 
+			 e melhorar a experiência do usuário de forma eficiente ou bancos de dados garantem o 
+			 armazenamento seguro e eficiente das informações, permitindo que o app funcione de 
+			 forma dinâmica e organizada. 
 			",
 		"opcoes": {
 			"Banco de Dados": "cena_banco_de_dados",
