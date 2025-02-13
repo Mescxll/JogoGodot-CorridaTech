@@ -278,7 +278,7 @@ var choices = {
 		
 		"paragrafo22": {
 			"texto": 
-			"Agora decida entre estudar APIs e Consumo de Dados ou Banco de Dados. 
+			"Agora decida vou te exĺicar sobre APIs e Consumo de Dados e Banco de Dados. 
 			",
 			"opcoes": {
 				"": "paragrafo24",
