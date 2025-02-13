@@ -59,7 +59,7 @@ var choices = {
 	},
 	"cena_faculdade": {
 		"texto": 
-		"Você escolheu a faculdade de Ti, onde você descobre que o verdadeiro vilão não 
+		"Você escolheu a faculdade de TI, onde você descobre que o verdadeiro vilão não 
 		é o código, mas sim o professor que diz “O trabalho é em grupo”.",
 		"opcoes": {
 			"": "paragrafo7",
