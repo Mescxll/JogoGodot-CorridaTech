@@ -312,7 +312,7 @@ var choices = {
 		
 		"paragrafo26": {
 			"texto": 
-			""APIs são pontes que conectam sistemas, permitindo o consumo eficiente de dados e a 
+			"APIs são pontes que conectam sistemas, permitindo o consumo eficiente de dados e a 
 			 integração de serviços de forma segura e escalável.
 			",
 		"opcoes": {
