@@ -278,7 +278,7 @@ var choices = {
 		
 		"paragrafo22": {
 			"texto": 
-			"Agora decida vou te exĺicar sobre APIs e Consumo de Dados e Banco de Dados. 
+			"Agora decida entre estudar APIs e Consumo de Dados ou Banco de Dados. 
 			",
 			"opcoes": {
 				"": "paragrafo24",
@@ -887,7 +887,7 @@ var choices = {
 			"scene": "sorrindo"
 		},
 		
-		"cena_cena_git": {
+		"cena_git": {
 			"texto": 
 			"Você escolheu aprender Git, o salva-vidas do desenvolvedor: quando tudo dá errado, ele 
 			te ajuda a voltar no tempo e fingir que nada aconteceu! Vou mostrar alguns comandos
