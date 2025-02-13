@@ -797,17 +797,6 @@ var choices = {
 		novos desafios, tecnologias emergentes e a necessidade constante de aprender e evoluir. 
 		O verdadeiro jogo começa agora!",
 		"opcoes":{
-			"":"paragrafo74",
-		},
-		"scene":"sorrindo"
-	},
-	
-	"paragrafo74":{
-		"texto":
-		"Ahahahaha!! Você achou o melhor caminho para se tornar um desenvolvedor backend. 
-		Incrível, incrível! Obrigado por jogar até aqui, com certeza você será um/uma grande 
-		desenvolvedor(a)!!",
-		"opcoes":{
 			"":"vitoria",
 		},
 		"scene":"sorrindo"
@@ -887,27 +876,16 @@ var choices = {
 		novos desafios, tecnologias emergentes e a necessidade constante de aprender e evoluir. 
 		O verdadeiro jogo começa agora!",
 		"opcoes": {
-			"": "paragrafo82",
+			"": "vitoria",
 		},
 		"scene": "sorrindo"
 	},
-	
-	"paragrafo82": {
-		"texto": 
-		"No entanto, não era esse o melhor caminho para se tornar um/uma desenvolvedor(a) 
-		backend. Porém,  não desanime, você pode tentar novamente. Eu sei que você conseguirá, 
-		nunca desista e continue se esforçando aqui e aí também!",
-		"opcoes": {
-			"": "vitoria",
-		},
-		"scene": "normal"
-	},
-	
+		
 	"vitoria": {
 		"texto": 
-		"O jogo chegou ao fim.",
+		"Vejamos seu desempenho... ",
 		"opcoes": {
-			"": "vitoria",
+			"": "",
 		},
 		"scene": "sorrindo"
 	},

@@ -1,4 +1,10 @@
 extends Node2D
+
+var caminho_percorrido = []  
+var caminho_vitoria1 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", 
+"Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Receber Certificação em Java", "", "", "Fazer Networking", "", "", "", ""]
+
 var current_scene = "inicio"  
 
 func load_scene(scene_name):
@@ -47,11 +53,18 @@ func load_scene(scene_name):
 
 func _on_choice_selected(choice):
 	var next_scene = Global.choices[current_scene]["opcoes"][choice]
-	load_scene(next_scene)  
+	caminho_percorrido.append(choice)
+	load_scene(next_scene)
 
 func _ready():
 	load_scene(current_scene)
 
 func _go_to_victory_scene():
 	Musica.rein_music2()
-	get_tree().change_scene_to_file("res://cena_vitoria.tscn")
+	print(caminho_percorrido)
+	if caminho_percorrido.size() >= caminho_vitoria1.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria1.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria1:
+			get_tree().change_scene_to_file("res://cena_vitoria5.tscn")
+			return
+	get_tree().change_scene_to_file("res://cena_vitoria1.tscn")

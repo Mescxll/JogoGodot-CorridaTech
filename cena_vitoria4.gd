@@ -1,0 +1,27 @@
+extends Node2D
+
+var texto_atual = "Parabéns, você está quase lá! Apenas alguns ajustes e você terá alcançado o melhor 
+caminho! Continue assim, sua jornada como desenvolvedor(a) está só começando e tenho certeza que você 
+está prestes a alcançar grandes feitos!"
+var letra_atual = 0
+var timer = null
+
+func _on_ready() -> void:  
+	if timer == null:
+		timer = Timer.new()
+		timer.wait_time = 0.05  
+		timer.one_shot = false
+		timer.connect("timeout", Callable(self, "_on_typing_timeout"))
+		add_child(timer)
+		timer.start()
+	$Label.text = ""  
+
+func _on_typing_timeout():
+	$Label.text = texto_atual.substr(0, letra_atual)
+	letra_atual += 1    
+	if letra_atual > texto_atual.length():
+		timer.stop()
+
+func _on_seta_e_pressed() -> void:
+	Musica.rein_music2()
+	get_tree().change_scene_to_file("res://cena_niveis.tscn")

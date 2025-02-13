@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://7wmjsl7jqltv"]
+
+[ext_resource type="Script" path="res://cena_vitoria4.gd" id="1_5puv8"]
+[ext_resource type="Texture2D" uid="uid://bbhoy6fp5ahkp" path="res://imagens/Fundo Vitória.jpg" id="2_gqxga"]
+[ext_resource type="Texture2D" uid="uid://cbr38fsegi0nv" path="res://imagens/Personagem 2 gargalhando.png" id="3_mk3x0"]
+[ext_resource type="Texture2D" uid="uid://c27yx47faicw8" path="res://imagens/Estrelas.png" id="4_yglkn"]
+[ext_resource type="Texture2D" uid="uid://d230nb843abkb" path="res://imagens/voltar.png" id="5_10ctd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5puv8")
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(574.5, 322)
+scale = Vector2(0.598437, 0.596296)
+texture = ExtResource("2_gqxga")
+
+[node name="Sprite2D" type="Sprite2D" parent="Fundo"]
+position = Vector2(5.84859, -26.8322)
+scale = Vector2(1.08416, 1.08388)
+texture = ExtResource("3_mk3x0")
+
+[node name="Estrela 1" type="Sprite2D" parent="."]
+position = Vector2(411.125, 164.5)
+scale = Vector2(0.1795, 0.178)
+texture = ExtResource("4_yglkn")
+
+[node name="Estrela 2" type="Sprite2D" parent="."]
+position = Vector2(489, 120)
+scale = Vector2(0.1795, 0.178)
+texture = ExtResource("4_yglkn")
+
+[node name="Estrela 3" type="Sprite2D" parent="."]
+position = Vector2(575, 96)
+scale = Vector2(0.1795, 0.178)
+texture = ExtResource("4_yglkn")
+
+[node name="Estrela 4" type="Sprite2D" parent="."]
+position = Vector2(663, 121)
+scale = Vector2(0.1795, 0.178)
+texture = ExtResource("4_yglkn")
+
+[node name="setaEsquerda2" type="Sprite2D" parent="."]
+position = Vector2(45, 35)
+texture = ExtResource("5_10ctd")
+
+[node name="setaE" type="Button" parent="setaEsquerda2"]
+modulate = Color(1, 1, 1, 0.313726)
+self_modulate = Color(0.470588, 0.207843, 0.819608, 0)
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 21.0
+offset_bottom = 20.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 37.0
+offset_top = 489.0
+offset_right = 1108.0
+offset_bottom = 607.0
+theme_override_colors/font_color = Color(0.0666667, 0.0117647, 0.152941, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="TypewriterTimer" type="Timer" parent="Label"]
+wait_time = 0.03
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="setaEsquerda2/setaE" to="." method="_on_seta_e_pressed"]
