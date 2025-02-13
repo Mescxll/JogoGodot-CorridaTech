@@ -312,10 +312,8 @@ var choices = {
 		
 		"paragrafo26": {
 			"texto": 
-			"Já o consumo de dados é a arte de não deixar seu usuário com a conta
-			do restaurante muito alta no fim do mês - porque ninguém gosta de um app 
-			guloso que devora todos os megabytes do pacote de dados como se fossem 
-			biscoitos de chocolate!
+			""APIs são pontes que conectam sistemas, permitindo o consumo eficiente de dados e a 
+			 integração de serviços de forma segura e escalável.
 			",
 		"opcoes": {
 				"": "paragrafo27",
