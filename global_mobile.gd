@@ -119,7 +119,7 @@ var choices = {
 		
 		"paragrafo10": {
 			"texto": 
-			"Agora você irá aprender fundamentos de programação que são a base sólida onde você 
+			"Agora você irá aprender fundamentos de programação  que são a base sólida onde você 
 			constrói suas ideias; é como aprender a linguagem do mundo digital, para que, com
 			cada linha de código, você tenha o poder de transformar problemas complexos em 
 			soluções simples e elegantes.
@@ -537,19 +537,9 @@ var choices = {
 				"": "paragrafo42",
 			},
 			"scene": "normal"
-		},
-		
+		},		
+				 
 		"paragrafo42": {
-			"texto": 
-			"Vamos continuar seguindo com sua trajetória, beleza?
-			",
-			"opcoes": {
-				"": "paragrafo43",
-			},
-			"scene": "normal"
-		},
-		 
-		"paragrafo43": {
 			"texto": 
 			"Nossa próxima decisão será seguir o caminho contribuindo com projetos
 			 Open-Source ou aprender iOS (Swift/Objective-C).
