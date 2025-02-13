@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://oivi0y1v2dr5"]
+[gd_scene load_steps=14 format=3 uid="uid://oivi0y1v2dr5"]
 
 [ext_resource type="Script" path="res://cena_niveis_3.gd" id="1_vewbh"]
 [ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_kt0xm"]
@@ -7,12 +7,19 @@
 [ext_resource type="Texture2D" uid="uid://dj5m6hhl2iajl" path="res://imagens/cyber.png" id="6_sqpbd"]
 [ext_resource type="Texture2D" uid="uid://bswuftmo4ybw5" path="res://imagens/setaEsquerda.png" id="7_pqxwm"]
 [ext_resource type="Texture2D" uid="uid://b4tsvgcgos40x" path="res://imagens/1.png" id="8_p7r66"]
-[ext_resource type="Texture2D" uid="uid://d06l01a0t6nqf" path="res://imagens/mobile.png" id="9_3wj2c"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_qldfg"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_rbbo0"]
 [ext_resource type="Texture2D" uid="uid://dqsm63b2bqutk" path="res://imagens/cadeado.png" id="11_1mncg"]
+[ext_resource type="Texture2D" uid="uid://ddsksurfbq1xk" path="res://imagens/frontend.png" id="11_8q2an"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5eow"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp33c"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -76,19 +83,6 @@ position = Vector2(576, 128)
 scale = Vector2(1.19835, 1)
 texture = ExtResource("3_tuhko")
 
-[node name="mobile" type="Sprite2D" parent="."]
-position = Vector2(448, 336)
-scale = Vector2(1.39474, 1.33516)
-texture = ExtResource("9_3wj2c")
-
-[node name="mobile" type="Button" parent="mobile"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
-offset_left = -50.0
-offset_top = -90.0
-offset_right = 51.0
-offset_bottom = 79.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_e5eow")
-
 [node name="cyber" type="Sprite2D" parent="."]
 position = Vector2(706, 336)
 scale = Vector2(1.39474, 1.33516)
@@ -125,6 +119,31 @@ offset_left = -25.0
 offset_top = -25.0
 offset_right = 21.0
 offset_bottom = 20.0
+
+[node name="frontend" type="Sprite2D" parent="."]
+position = Vector2(447, 329)
+scale = Vector2(1.39474, 1.33516)
+texture = ExtResource("11_8q2an")
+
+[node name="front" type="Button" parent="frontend"]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+offset_left = -52.3395
+offset_top = -83.1361
+offset_right = 51.6605
+offset_bottom = 84.8639
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp33c")
+
+[node name="ColorRect" type="ColorRect" parent="frontend"]
+offset_left = -53.0
+offset_top = -84.0
+offset_right = 52.0
+offset_bottom = 85.0
+color = Color(0.109804, 0.109804, 0.109804, 0.737255)
+
+[node name="Cadeado2" type="Sprite2D" parent="."]
+position = Vector2(447, 338)
+scale = Vector2(0.172375, 0.1765)
+texture = ExtResource("11_1mncg")
 
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]

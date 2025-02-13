@@ -1,18 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://c6vperr7m4tju"]
+[gd_scene load_steps=6 format=3 uid="uid://c6vperr7m4tju"]
 
 [ext_resource type="Script" path="res://cena_vitoria5.gd" id="1_gw0yr"]
 [ext_resource type="Texture2D" uid="uid://bbhoy6fp5ahkp" path="res://imagens/Fundo Vitória.jpg" id="2_7rero"]
 [ext_resource type="Texture2D" uid="uid://cbr38fsegi0nv" path="res://imagens/Personagem 2 gargalhando.png" id="3_sginr"]
 [ext_resource type="Texture2D" uid="uid://c27yx47faicw8" path="res://imagens/Estrelas.png" id="4_1c21h"]
 [ext_resource type="Texture2D" uid="uid://d230nb843abkb" path="res://imagens/voltar.png" id="5_f20bi"]
-[ext_resource type="Script" path="res://label.gd" id="6_af4fr"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_gw0yr")
 
 [node name="Fundo" type="Sprite2D" parent="."]
-position = Vector2(574.5, 322)
-scale = Vector2(0.598437, 0.596296)
+position = Vector2(576.5, 324)
+scale = Vector2(0.600521, 0.6)
 texture = ExtResource("2_7rero")
 
 [node name="Sprite2D" type="Sprite2D" parent="Fundo"]
@@ -64,7 +63,6 @@ offset_right = 1108.0
 offset_bottom = 607.0
 theme_override_colors/font_color = Color(0.0666667, 0.0117647, 0.152941, 1)
 theme_override_font_sizes/font_size = 25
-script = ExtResource("6_af4fr")
 
 [node name="TypewriterTimer2" type="Timer" parent="Label"]
 wait_time = 0.03

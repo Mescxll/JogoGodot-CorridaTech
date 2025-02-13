@@ -1,17 +1,24 @@
-[gd_scene load_steps=12 format=3 uid="uid://cf545ithu04rt"]
+[gd_scene load_steps=13 format=3 uid="uid://cf545ithu04rt"]
 
 [ext_resource type="Script" path="res://cena_niveis.gd" id="1_3iwd3"]
 [ext_resource type="Texture2D" uid="uid://cnyv6um7gg65q" path="res://imagens/Escolha.png" id="2_1040s"]
 [ext_resource type="Texture2D" uid="uid://cd514qw6xogpd" path="res://imagens/Fundo Roxo.png" id="2_e2gli"]
 [ext_resource type="Texture2D" uid="uid://cpay3wsswfpx2" path="res://imagens/backend.png" id="2_sgakx"]
-[ext_resource type="Texture2D" uid="uid://ddsksurfbq1xk" path="res://imagens/frontend.png" id="3_31i0k"]
 [ext_resource type="Texture2D" uid="uid://bswuftmo4ybw5" path="res://imagens/setaEsquerda.png" id="6_wk5hd"]
 [ext_resource type="Texture2D" uid="uid://cwphv3ekcfkjf" path="res://imagens/setaDireita.png" id="7_bof3y"]
 [ext_resource type="Texture2D" uid="uid://b4tsvgcgos40x" path="res://imagens/1.png" id="8_2gxb4"]
 [ext_resource type="Texture2D" uid="uid://btub6cr865nud" path="res://imagens/2.png" id="9_6ppcl"]
+[ext_resource type="Texture2D" uid="uid://d06l01a0t6nqf" path="res://imagens/mobile.png" id="10_7kpqt"]
 [ext_resource type="Texture2D" uid="uid://dko5gauex045u" path="res://imagens/3.png" id="10_jfx3h"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pa6dp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djh3p"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -41,19 +48,6 @@ self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
 offset_left = -52.0
 offset_top = -83.0
 offset_right = 50.0
-offset_bottom = 85.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_pa6dp")
-
-[node name="frontend" type="Sprite2D" parent="."]
-position = Vector2(706, 336)
-scale = Vector2(1.39474, 1.33516)
-texture = ExtResource("3_31i0k")
-
-[node name="front" type="Button" parent="frontend"]
-self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
-offset_left = -52.0
-offset_top = -83.0
-offset_right = 52.0
 offset_bottom = 85.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_pa6dp")
 
@@ -113,7 +107,21 @@ offset_top = -25.0
 offset_right = 21.0
 offset_bottom = 20.0
 
+[node name="mobile" type="Sprite2D" parent="."]
+position = Vector2(704, 344)
+scale = Vector2(1.39474, 1.33516)
+texture = ExtResource("10_7kpqt")
+
+[node name="mobile" type="Button" parent="mobile"]
+self_modulate = Color(0.0745098, 0.0117647, 0.164706, 0.796078)
+offset_left = -50.1886
+offset_top = -89.1279
+offset_right = 50.8114
+offset_bottom = 79.8721
+theme_override_styles/normal = SubResource("StyleBoxFlat_djh3p")
+
 [connection signal="pressed" from="backend/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="setaEsquerda/setaE" to="." method="_on_seta_e_pressed"]
 [connection signal="pressed" from="setaDireita/setaD" to="." method="_on_seta_d_pressed"]
 [connection signal="pressed" from="setaEsquerda2/setaE" to="." method="_on_seta_e_2pressed"]
+[connection signal="pressed" from="mobile/mobile" to="." method="_on_mobile_pressed"]

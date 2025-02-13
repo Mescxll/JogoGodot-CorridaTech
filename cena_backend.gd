@@ -4,6 +4,39 @@ var caminho_percorrido = []
 var caminho_vitoria1 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", 
 "Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
 "Receber Certificação em Java", "", "", "Fazer Networking", "", "", "", ""]
+var caminho_vitoria2 = ["", "", "", "", "Escolher Curso Técnico de TI", "", "", "", "", "", 
+"", "Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Receber Certificação em Java", "", "", "Fazer Networking", "", "", "", ""]
+var caminho_vitoria3 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", 
+"Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Participar de Hackathons", "", "Criar Projetos Pessoais", "", "", "", "Manter-se Atualizado", "", "", "", ""]
+var caminho_vitoria4 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", "Aprender SQL", "", 
+"", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", "Receber Certificação em Java", "", "", 
+"Participar de Resoluções de Problemas", "", "", "", "", ""]
+var caminho_vitoria5 = ["", "", "", "", "Escolher Curso Técnico de TI", "", "", "", "", "", "", "Aprender SQL", 
+"", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", "Participar de Hackathons", 
+"", "Criar Projetos Pessoais", "", "", "", "Manter-se Atualizado", "", "", ""]
+var caminho_vitoria6 = ["", "", "", "", "Escolher Curso Técnico de TI", "", "", "", "", "", "", "Aprender SQL", 
+"", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", "Receber Certificação em Java", "", "", 
+"Participar de Resoluções de Problemas", "", "", "", "", ""]
+var caminho_vitoria7 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", 
+"", "Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Participar de Hackathons", "", "Participar de Resoluções de Problemas", "", "", "", "", ""]
+var caminho_vitoria8 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", "Aprender SQL", "", "", 
+"", "", "Aprender Frameworks Java", "", "", "", "", "", "", "Participar de Hackathons", "", 
+"Criar Projetos Pessoais", "", "", "", "Aprimorar Soft-Skills", "", "", ""]
+var caminho_vitoria9 = ["", "", "", "", "Escolher Curso Técnico de TI", "", "", "", "", "", "", 
+"Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Participar de Hackathons", "", "Participar de Resoluções de Problemas", "", "", "", "", ""]
+var caminho_vitoria10 = ["", "", "", "", "Escolher Curso Técnico de TI", "", "", "", "", "", "", 
+"Aprender SQL", "", "", "", "", "Aprender Frameworks Java", "", "", "", "", "", "", 
+"Participar de Hackathons", "", "Criar Projetos Pessoais", "", "", "", "Aprimorar Soft-Skills", "", "", ""]
+var caminho_vitoria11 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", 
+"Aprender SQL", "", "", "", "", "Aprender Git", "", "", "", "", "Criar Projetos Pessoais",
+"", "", "", "Manter-se Atualizado", "", "", ""]
+var caminho_vitoria12 = ["", "", "", "", "Escolher Faculdade de TI", "", "", "", "", "", "", "Aprender Design Patterns",
+"", "", "", "", "", "Estudar Arquitetura de Software", "", "", "", "", "", 
+"Receber Certificação em Java", "", "", "Fazer Networking", "", "", "", ""]
 
 var current_scene = "inicio"  
 
@@ -67,4 +100,60 @@ func _go_to_victory_scene():
 		if trecho == caminho_vitoria1:
 			get_tree().change_scene_to_file("res://cena_vitoria5.tscn")
 			return
+	if caminho_percorrido.size() >= caminho_vitoria2.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria2.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria2:
+			get_tree().change_scene_to_file("res://cena_vitoria4.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria3.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria3.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria3:
+			get_tree().change_scene_to_file("res://cena_vitoria4.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria4.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria4.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria4:
+			get_tree().change_scene_to_file("res://cena_vitoria4.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria5.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria5.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria5:
+			get_tree().change_scene_to_file("res://cena_vitoria4.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria6.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria6.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria6:
+			get_tree().change_scene_to_file("res://cena_vitoria3.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria7.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria7.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria7:
+			get_tree().change_scene_to_file("res://cena_vitoria3.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria8.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria8.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria8:
+			get_tree().change_scene_to_file("res://cena_vitoria3.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria9.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria9.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria9:
+			get_tree().change_scene_to_file("res://cena_vitoria2.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria10.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria10.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria10:
+			get_tree().change_scene_to_file("res://cena_vitoria2.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria11.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria11.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria11:
+			get_tree().change_scene_to_file("res://cena_vitoria2.tscn")
+			return
+	if caminho_percorrido.size() >= caminho_vitoria12.size():
+		var trecho = caminho_percorrido.slice(-caminho_vitoria12.size(), caminho_percorrido.size())
+		if trecho == caminho_vitoria12:
+			get_tree().change_scene_to_file("res://cena_vitoria2.tscn")
+			return
+	
 	get_tree().change_scene_to_file("res://cena_vitoria1.tscn")

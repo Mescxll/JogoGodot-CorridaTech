@@ -830,20 +830,9 @@ var choices = {
 		novos desafios, tecnologias emergentes e a necessidade constante de aprender e evoluir. 
 		O verdadeiro jogo começa agora!",
 		"opcoes": {
-			"": "paragrafo78",
-		},
-		"scene": "sorrindo"
-	},
-	
-	"paragrafo78": {
-		"texto": 
-		"No entanto, não era esse o melhor caminho para se tornar um/uma desenvolvedor(a) 
-		backend. Porém,  não desanime, você pode tentar novamente. Eu sei que você conseguirá, 
-		nunca desista e continue se esforçando aqui e aí também!",
-		"opcoes": {
 			"": "vitoria",
 		},
-		"scene": "normal"
+		"scene": "sorrindo"
 	},
 	
 	"cena_softSkills": {

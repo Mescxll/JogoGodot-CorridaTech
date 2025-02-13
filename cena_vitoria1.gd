@@ -1,12 +1,13 @@
 extends Node2D
 
-var texto_atual = "Mas mesmo tendo alcançado seu objetivo, não era esse o melhor caminho. Porém,  
-não desanime, você pode tentar novamente. Eu sei que você conseguirá, nunca desista e continue se
-esforçando aqui e aí também!"
+var texto_atual = "Mesmo tendo alcançado seu objetivo, não era esse o melhor caminho. Porém, não 
+desanime, você pode tentar novamente. Eu sei que você conseguirá, nunca desista e con-
+tinue se esforçando aqui e aí também!"
 var letra_atual = 0
 var timer = null
 
 func _on_ready() -> void:  
+	Musica.rein_music2()
 	if timer == null:
 		timer = Timer.new()
 		timer.wait_time = 0.05  
@@ -23,5 +24,4 @@ func _on_typing_timeout():
 		timer.stop()
 
 func _on_seta_e_pressed() -> void:
-	Musica.rein_music2()
 	get_tree().change_scene_to_file("res://cena_niveis.tscn")

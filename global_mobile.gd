@@ -481,39 +481,17 @@ var choices = {
 			},
 			"scene": "sorrindo"
 		},
-		
-		"paragrafo38": {
-			"texto":
-			"Você finalizou o jogo! No entanto, esse não era o melhor caminho para 
-			se tornar um Desenvolvedor(a) Mobile. 		
-			",
-			"opcoes": {
-				"": "paragrafo39",
-			},
-			"scene": "normal"
-		},
-		
-		"paragrafo39": {
-			"texto": 
-			"Existem outras escolhas melhores para chegar a esse objetivo. Espero
-			que jogue novamente e se divirta um pouco mais comigo.  
-			",
-			"opcoes": {
-				"": "paragrafo40",
-			},
-			"scene": "normal"
-		},
-		
+			
 		#Aqui é o fim do caminho: Escolher Faculdade de TI, Cross-platform, Crashlytics, APIs e Consumo de Dados
 		#Participar de Conferẽncias e Entrevista Técnica 
-		"paragrafo40": {
-			"texto": 
-			"Lembre-se, nunca desista e continue se esforçando aqui e aí também! 
+		"paragrafo38": {
+			"texto":
+			"Você finalizou o jogo! 		
 			",
 			"opcoes": {
 				"": "vitoria",
 			},
-			"scene": "sorrindo"
+			"scene": "normal"
 		},
 			
 		"cena_android": {
@@ -887,7 +865,7 @@ var choices = {
 			"scene": "sorrindo"
 		},
 		
-		"cena_cena_git": {
+		"cena_git": {
 			"texto": 
 			"Você escolheu aprender Git, o salva-vidas do desenvolvedor: quando tudo dá errado, ele 
 			te ajuda a voltar no tempo e fingir que nada aconteceu! Vou mostrar alguns comandos
@@ -1057,82 +1035,18 @@ var choices = {
 		
 		"paragrafo81": {
 			"texto": 
-			"Você finalizou o jogo! No entanto, esse não era o melhor caminho para se tornar um 
-			Desenvolvedor(a) Mobile. 
-			",
-		"opcoes": {
-			"": "paragrafo82",
-		},
-			"scene": "normal"
-		},	
-		
-		"paragrafo82": {
-			"texto": 
-			"Existem outras escolhas melhores para chegar a esse objetivo. Espero que jogue 
-			 novamente e se divirta um pouco mais comigo. 
-			",
-		"opcoes": {
-			"": "paragrafo83",
-		},
-			"scene": "sorrindo"
-		},
-		
-		"paragrafo83": {
-			"texto": 
-			"Lembre-se, nunca desista e continue se esforçando aqui e aí também! 
+			"Você finalizou o jogo! 
 			",
 		"opcoes": {
 			"": "vitoria",
 		},
-			"scene": "sorrindo"
-		},
+			"scene": "normal"
+		},	
 		
 		"cena_primeiroEmprego": {
 			"texto": 
-			"Parabéns, você fez as escolhas certas e seguiu o caminho mais promissor!  
-			",
-		"opcoes": {
-			"": "paragrafo84",	
-		},
-			"scene": "sorrindo"
-		},
-		
-		"paragrafo84": {
-			"texto": 
 			"Ao se tornar um desenvolvedor mobile, você deu um passo gigante para uma 
-			 carreira cheia de possibilidades e inovações. 
-			",
-		"opcoes": {
-			"": "paragrafo85",	
-		},
-			"scene": "sorrindo"
-		},
-		
-		"paragrafo85": {
-			"texto": 
-			"O esforço, a dedicação e as decisões que você tomou agora vão te levar a criar 
-			 aplicativos incríveis, impactar o mundo da tecnologia e alcançar novas alturas. 
-			",
-		"opcoes": {
-			"": "paragrafo86",	
-		},
-			"scene": "sorrindo"
-		},
-		
-		"paragrafo86": {
-			"texto": 
-			"O futuro está nas suas mãos, e você está pronto para deixar sua marca com muita 
-			 criatividade e talento! 
-			",
-		"opcoes": {
-			"": "paragrafo87",	
-		},
-			"scene": "sorrindo"
-		},
-		
-		"paragrafo87": {
-			"texto": 
-			"Continue aprendendo, explorando e criando, porque o melhor ainda está por vir!
+			 carreira cheia de possibilidades e inovações! Parabéns por essa jornada. 
 			",
 		"opcoes": {
 			"": "vitoria",	
@@ -1277,7 +1191,7 @@ var choices = {
 			 seguindo adiante!
 			",
 		"opcoes": {
-			"": "paragrafo97",
+			"": "paragrafo98",
 		},
 			"scene": "sorrindo"
 		},
@@ -1311,9 +1225,9 @@ var choices = {
 		#vitoria	
 		"vitoria": {
 			"texto": 
-			"O jogo chegou ao fim.",
+			"Vejamos seu desempenho...",
 			"opcoes": {
-				"": "vitoria",
+				"": "",
 			},
 			"scene": "sorrindo"
 		},

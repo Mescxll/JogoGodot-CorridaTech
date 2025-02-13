@@ -1,8 +1,8 @@
 extends Node2D
 
 var texto_atual = "Parabéns, você está quase lá! Apenas alguns ajustes e você terá alcançado o melhor 
-caminho! Continue assim, sua jornada como desenvolvedor(a) está só começando e tenho certeza que você 
-está prestes a alcançar grandes feitos!"
+caminho! Continue assim, sua jornada como desenvolvedor(a) está só começando e tenho 
+certeza que você está prestes a alcançar grandes feitos!"
 var letra_atual = 0
 var timer = null
 

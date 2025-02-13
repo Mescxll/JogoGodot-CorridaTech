@@ -1,8 +1,8 @@
 extends Node2D
 
-var texto_atual = "Você chegou até aqui, e isso já é um grande feito! Porém, o caminho que você seguiu 
-não foi o mais eficiente. Não se preocupe, cada erro é uma oportunidade de aprendizado. Tente novamente, 
-você está mais perto do que imagina!"
+var texto_atual = "Você chegou até aqui, e isso já é um grande feito! Porém, o caminho que você seguiu não 
+foi o mais eficiente. Não se preocupe, cada erro é uma oportunidade de aprendizado. 
+Tente novamente, você está mais perto do que imagina!"
 var letra_atual = 0
 var timer = null
 

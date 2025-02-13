@@ -7,7 +7,7 @@ var char_index = 0
 
 func _ready():
 	text = ""  
-	timer.timeout.connect(_on_TypewriterTimer_timeout)  
+	timer.timeout.connect(_on_TypewriterTimer_timeout)
 
 func start_typing(new_text: String):
 	full_text = new_text
